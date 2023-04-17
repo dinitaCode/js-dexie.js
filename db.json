@@ -1,0 +1,837 @@
+
+mockaroo
+
+Looking to generate fake data based on your production data? Mimic your databases with a trial account from
+
+Need some mock data to test your app? Mockaroo lets you generate up to 1,000 rows of realistic test data in CSV, JSON, SQL, and Excel formats.
+
+Need more data? Plans start at just $60/year. Mockaroo is also available as a docker image that you can deploy in your own private cloud.
+Field Name
+Type
+Options
+kar_id
+​
+blank:
+0
+%
+
+​
+nama
+​
+blank:
+0
+%
+
+​
+alamat
+​
+restrict countries...
+​
+blank:
+0
+%
+
+​
+no_hp
+​
+format:
++# ### ### ####
+​
+blank:
+0
+%
+
+​
+tgl_lahir
+​
+04/17/2022
+​
+to
+04/17/2023
+​
+format:
+%-m/%-d/%Y
+​
+blank:
+0
+%
+
+​
+image
+​
+size:
+50
+​
+×
+50
+​
+format:
+png
+​
+blank:
+0
+%
+
+​
+# Rows:
+100
+​
+Format:
+json
+​
+array
+include null values
+Hint: Use "." in column names to generate nested json objects, brackets to generate arrays. More information...
+
+Mock your back-end API and start coding your UI today.
+It's hard to put together a meaningful UI prototype without making real requests to an API. By making real requests, you'll uncover problems with application flow, timing, and API design early, improving the quality of both the user experience and API. With Mockaroo, you can design your own mock APIs, You control the URLs, responses, and error conditions. Paralellize UI and API development and start delivering better applications faster today!
+
+Why is test data important?
+If you're developing an application, you'll want to make sure you're testing it under conditions that closely simulate a production environment. In production, you'll have an army of users banging away at your app and filling your database with data, which puts stress on your code. If you're hand-entering data into a test environment one record at a time using the UI, you're never going to build up the volume and variety of data that your app will accumulate in a few days in production. Worse, the data you enter will be biased towards your own usage patterns and won't match real-world usage, leaving important bugs undiscovered.
+
+Why is realistic data important?
+When your test database is filled with realistic looking data, you'll be more engaged as a tester. When you demonstrate new features to others, they'll understand them faster. Real data is varied and will contain characters that may not play nice with your code, such as apostrophes, or unicode characters from other languages. Testing with realistic data will make your app more robust because you'll catch errors that are likely to occur in production before release day.
+
+Why Mockaroo?
+There are plenty of great data mocking libraries available for almost every language and platform. But not everyone is a programmer or has time to learn a new framework. Mockaroo allows you to quickly and easily to download large amounts of randomly generated test data based on your own specs which you can then load directly into your test environment using SQL or CSV formats. No programming is required.
+
+Want to automate test data generation?
+If you sign in using your Google account, you can download random data programmatically by saving your schemas and using curl to download data in a shell script via a RESTful url.
+
+What's new in Mockaroo?
+4/15/2023
+You can now generate your own custom data types using AI.
+4/12/2023
+You can now generate fields on any topic using AI
+4/2/2023
+Added support for XML attributes by naming fields starting with "@"
+2/3/2023
+Added the ability to generate v5 UUIDs via a new uuid_v5(namespace, name) function in formulas
+1/22/2023
+Added the ability to force the quote character on custom file formats.
+1/4/2023
+Added Address Line 2 type.
+12/22/2022
+Added a ULID data type.
+11/20/2022
+Added airport data.
+11/14/2021
+You can now generate datasets using JSON and import them into other schemas using the Dataset Column type.
+10/14/2021
+Added support for InfluxDB
+6/19/2021
+Added the ability to import fields from a JSON schema or example JSON object.
+5/22/2021
+You can now create a dataset directly from a schema. You no longer need to download and reupload generated data to create a dataset!
+5/19/2021
+You can now stream data to an MQTT endpoint! Click More > Stream to MQTT Endpoint... to get started.
+5/3/2021
+Added types related to construction work.
+5/3/2021
+Added Etherium and Tezos types.
+© 2023 Mockaroo, LLC.   |  Terms of Use   |  EULA   |  Privacy
+Preview
+[{
+  "kar_id": 1,
+  "nama": "Philomena",
+  "alamat": "Portugal",
+  "no_hp": "+351 337 937 8335",
+  "tgl_lahir": "10/4/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 2,
+  "nama": "Homerus",
+  "alamat": "Poland",
+  "no_hp": "+48 608 925 2921",
+  "tgl_lahir": "2/3/2023",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 3,
+  "nama": "Celene",
+  "alamat": "Benin",
+  "no_hp": "+229 201 613 8760",
+  "tgl_lahir": "5/8/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 4,
+  "nama": "Virgilio",
+  "alamat": "Canada",
+  "no_hp": "+1 941 856 4167",
+  "tgl_lahir": "10/22/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 5,
+  "nama": "Trstram",
+  "alamat": "Poland",
+  "no_hp": "+48 232 300 3461",
+  "tgl_lahir": "5/17/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 6,
+  "nama": "Madella",
+  "alamat": "Indonesia",
+  "no_hp": "+62 841 517 1491",
+  "tgl_lahir": "11/2/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 7,
+  "nama": "Harriott",
+  "alamat": "France",
+  "no_hp": "+33 595 881 0240",
+  "tgl_lahir": "3/1/2023",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 8,
+  "nama": "Gideon",
+  "alamat": "El Salvador",
+  "no_hp": "+503 659 686 8209",
+  "tgl_lahir": "7/10/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 9,
+  "nama": "Cornie",
+  "alamat": "China",
+  "no_hp": "+86 636 391 3628",
+  "tgl_lahir": "10/4/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 10,
+  "nama": "Elvina",
+  "alamat": "Indonesia",
+  "no_hp": "+62 937 211 5983",
+  "tgl_lahir": "9/16/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 11,
+  "nama": "Nancee",
+  "alamat": "Philippines",
+  "no_hp": "+63 944 514 0849",
+  "tgl_lahir": "11/4/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 12,
+  "nama": "Randy",
+  "alamat": "Indonesia",
+  "no_hp": "+62 530 356 3955",
+  "tgl_lahir": "9/30/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 13,
+  "nama": "Deny",
+  "alamat": "Pakistan",
+  "no_hp": "+92 578 180 4560",
+  "tgl_lahir": "8/17/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 14,
+  "nama": "Nolan",
+  "alamat": "France",
+  "no_hp": "+33 135 190 4652",
+  "tgl_lahir": "5/6/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 15,
+  "nama": "Liuka",
+  "alamat": "South Africa",
+  "no_hp": "+27 835 964 3366",
+  "tgl_lahir": "1/24/2023",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 16,
+  "nama": "Greggory",
+  "alamat": "China",
+  "no_hp": "+86 837 454 4334",
+  "tgl_lahir": "8/18/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 17,
+  "nama": "Zeke",
+  "alamat": "China",
+  "no_hp": "+86 331 174 8586",
+  "tgl_lahir": "4/10/2023",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 18,
+  "nama": "Vinny",
+  "alamat": "Indonesia",
+  "no_hp": "+62 294 427 0717",
+  "tgl_lahir": "9/13/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 19,
+  "nama": "Tasha",
+  "alamat": "Bolivia",
+  "no_hp": "+591 694 263 5575",
+  "tgl_lahir": "8/29/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 20,
+  "nama": "Waldon",
+  "alamat": "Russia",
+  "no_hp": "+7 911 959 4720",
+  "tgl_lahir": "9/8/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 21,
+  "nama": "Arda",
+  "alamat": "Sweden",
+  "no_hp": "+46 295 606 7345",
+  "tgl_lahir": "2/20/2023",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 22,
+  "nama": "Lancelot",
+  "alamat": "Indonesia",
+  "no_hp": "+62 824 966 4936",
+  "tgl_lahir": "2/26/2023",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 23,
+  "nama": "Rhys",
+  "alamat": "Botswana",
+  "no_hp": "+267 263 943 8407",
+  "tgl_lahir": "2/22/2023",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 24,
+  "nama": "Lavinia",
+  "alamat": "Indonesia",
+  "no_hp": "+62 712 262 2038",
+  "tgl_lahir": "4/14/2023",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 25,
+  "nama": "Ivan",
+  "alamat": "Norway",
+  "no_hp": "+47 994 403 6196",
+  "tgl_lahir": "1/29/2023",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 26,
+  "nama": "Katusha",
+  "alamat": "Morocco",
+  "no_hp": "+212 657 373 5300",
+  "tgl_lahir": "5/31/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 27,
+  "nama": "Yoshiko",
+  "alamat": "Indonesia",
+  "no_hp": "+62 354 530 9611",
+  "tgl_lahir": "9/18/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 28,
+  "nama": "Gillan",
+  "alamat": "Colombia",
+  "no_hp": "+57 765 343 6295",
+  "tgl_lahir": "4/6/2023",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 29,
+  "nama": "Patricio",
+  "alamat": "China",
+  "no_hp": "+86 484 638 4862",
+  "tgl_lahir": "7/29/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 30,
+  "nama": "Brnaba",
+  "alamat": "China",
+  "no_hp": "+86 543 670 6117",
+  "tgl_lahir": "7/19/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 31,
+  "nama": "Shadow",
+  "alamat": "China",
+  "no_hp": "+86 525 970 0600",
+  "tgl_lahir": "12/7/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 32,
+  "nama": "Lyell",
+  "alamat": "Indonesia",
+  "no_hp": "+62 658 536 0818",
+  "tgl_lahir": "4/28/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 33,
+  "nama": "Berthe",
+  "alamat": "Poland",
+  "no_hp": "+48 860 298 5139",
+  "tgl_lahir": "6/6/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 34,
+  "nama": "Jeremiah",
+  "alamat": "Cuba",
+  "no_hp": "+53 441 704 6844",
+  "tgl_lahir": "4/21/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 35,
+  "nama": "Donelle",
+  "alamat": "Sweden",
+  "no_hp": "+46 863 265 5838",
+  "tgl_lahir": "4/19/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 36,
+  "nama": "Cad",
+  "alamat": "Thailand",
+  "no_hp": "+66 481 307 7274",
+  "tgl_lahir": "9/30/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 37,
+  "nama": "Ofelia",
+  "alamat": "China",
+  "no_hp": "+86 707 329 9794",
+  "tgl_lahir": "6/13/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 38,
+  "nama": "Elsi",
+  "alamat": "Indonesia",
+  "no_hp": "+62 859 307 5695",
+  "tgl_lahir": "11/27/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 39,
+  "nama": "Corabella",
+  "alamat": "China",
+  "no_hp": "+86 962 231 4272",
+  "tgl_lahir": "1/7/2023",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 40,
+  "nama": "Sheri",
+  "alamat": "Czech Republic",
+  "no_hp": "+420 207 690 3760",
+  "tgl_lahir": "3/4/2023",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 41,
+  "nama": "Ashil",
+  "alamat": "Uzbekistan",
+  "no_hp": "+998 480 452 8364",
+  "tgl_lahir": "5/1/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 42,
+  "nama": "Monah",
+  "alamat": "Sweden",
+  "no_hp": "+46 428 514 3923",
+  "tgl_lahir": "8/30/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 43,
+  "nama": "Nikita",
+  "alamat": "Gabon",
+  "no_hp": "+241 853 328 1536",
+  "tgl_lahir": "9/4/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 44,
+  "nama": "Bengt",
+  "alamat": "China",
+  "no_hp": "+86 738 707 6664",
+  "tgl_lahir": "1/25/2023",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 45,
+  "nama": "Carley",
+  "alamat": "United States",
+  "no_hp": "+1 810 408 9703",
+  "tgl_lahir": "1/5/2023",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 46,
+  "nama": "Bernice",
+  "alamat": "China",
+  "no_hp": "+86 627 705 0201",
+  "tgl_lahir": "2/26/2023",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 47,
+  "nama": "Vincent",
+  "alamat": "Poland",
+  "no_hp": "+48 265 929 8950",
+  "tgl_lahir": "11/2/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 48,
+  "nama": "Lyndsey",
+  "alamat": "Palestinian Territory",
+  "no_hp": "+970 443 131 3072",
+  "tgl_lahir": "6/23/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 49,
+  "nama": "Nadiya",
+  "alamat": "Japan",
+  "no_hp": "+81 970 249 2730",
+  "tgl_lahir": "1/7/2023",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 50,
+  "nama": "Aggy",
+  "alamat": "Indonesia",
+  "no_hp": "+62 963 275 5637",
+  "tgl_lahir": "4/12/2023",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 51,
+  "nama": "Lauretta",
+  "alamat": "Russia",
+  "no_hp": "+7 340 483 4153",
+  "tgl_lahir": "9/8/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 52,
+  "nama": "Orville",
+  "alamat": "Peru",
+  "no_hp": "+51 424 499 5022",
+  "tgl_lahir": "8/26/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 53,
+  "nama": "Judye",
+  "alamat": "Georgia",
+  "no_hp": "+995 941 963 5418",
+  "tgl_lahir": "3/12/2023",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 54,
+  "nama": "Odella",
+  "alamat": "France",
+  "no_hp": "+33 298 912 2674",
+  "tgl_lahir": "11/24/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 55,
+  "nama": "Kerstin",
+  "alamat": "Argentina",
+  "no_hp": "+54 595 386 1344",
+  "tgl_lahir": "11/16/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 56,
+  "nama": "Aldwin",
+  "alamat": "Russia",
+  "no_hp": "+7 610 895 3660",
+  "tgl_lahir": "11/11/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 57,
+  "nama": "Quintina",
+  "alamat": "New Zealand",
+  "no_hp": "+64 950 670 1287",
+  "tgl_lahir": "8/26/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 58,
+  "nama": "Earlie",
+  "alamat": "Philippines",
+  "no_hp": "+63 782 693 2493",
+  "tgl_lahir": "6/14/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 59,
+  "nama": "Natividad",
+  "alamat": "China",
+  "no_hp": "+86 746 408 2807",
+  "tgl_lahir": "7/29/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 60,
+  "nama": "Dusty",
+  "alamat": "Morocco",
+  "no_hp": "+212 255 788 4563",
+  "tgl_lahir": "11/18/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 61,
+  "nama": "Vidovik",
+  "alamat": "Portugal",
+  "no_hp": "+351 575 881 3725",
+  "tgl_lahir": "6/13/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 62,
+  "nama": "Chelsy",
+  "alamat": "South Africa",
+  "no_hp": "+27 948 568 8571",
+  "tgl_lahir": "7/9/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 63,
+  "nama": "Law",
+  "alamat": "Indonesia",
+  "no_hp": "+62 239 553 3985",
+  "tgl_lahir": "3/13/2023",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 64,
+  "nama": "Lilly",
+  "alamat": "United States",
+  "no_hp": "+1 917 532 6258",
+  "tgl_lahir": "8/12/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 65,
+  "nama": "Bunny",
+  "alamat": "Canada",
+  "no_hp": "+1 231 815 2025",
+  "tgl_lahir": "6/25/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 66,
+  "nama": "Brandy",
+  "alamat": "Brazil",
+  "no_hp": "+55 715 612 0199",
+  "tgl_lahir": "3/15/2023",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 67,
+  "nama": "Alfons",
+  "alamat": "Indonesia",
+  "no_hp": "+62 910 112 5307",
+  "tgl_lahir": "12/21/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 68,
+  "nama": "Willy",
+  "alamat": "Portugal",
+  "no_hp": "+351 864 579 8214",
+  "tgl_lahir": "10/27/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 69,
+  "nama": "Nari",
+  "alamat": "Russia",
+  "no_hp": "+7 788 913 0787",
+  "tgl_lahir": "12/31/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 70,
+  "nama": "Andras",
+  "alamat": "Poland",
+  "no_hp": "+48 998 730 2346",
+  "tgl_lahir": "1/18/2023",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 71,
+  "nama": "Berkeley",
+  "alamat": "Japan",
+  "no_hp": "+81 137 872 3772",
+  "tgl_lahir": "1/26/2023",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 72,
+  "nama": "Alina",
+  "alamat": "Brazil",
+  "no_hp": "+55 991 912 3792",
+  "tgl_lahir": "7/12/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 73,
+  "nama": "Marian",
+  "alamat": "Indonesia",
+  "no_hp": "+62 656 309 8478",
+  "tgl_lahir": "2/20/2023",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 74,
+  "nama": "Jermayne",
+  "alamat": "China",
+  "no_hp": "+86 756 280 9913",
+  "tgl_lahir": "6/12/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 75,
+  "nama": "Krystal",
+  "alamat": "Nigeria",
+  "no_hp": "+234 149 334 9689",
+  "tgl_lahir": "4/22/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 76,
+  "nama": "Mallissa",
+  "alamat": "United States",
+  "no_hp": "+1 202 191 4145",
+  "tgl_lahir": "2/23/2023",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 77,
+  "nama": "Barbey",
+  "alamat": "Indonesia",
+  "no_hp": "+62 769 467 7625",
+  "tgl_lahir": "6/25/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 78,
+  "nama": "Geri",
+  "alamat": "Ireland",
+  "no_hp": "+353 846 559 2536",
+  "tgl_lahir": "7/3/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 79,
+  "nama": "Kendell",
+  "alamat": "Indonesia",
+  "no_hp": "+62 480 687 0808",
+  "tgl_lahir": "1/25/2023",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 80,
+  "nama": "Sybila",
+  "alamat": "China",
+  "no_hp": "+86 126 777 6440",
+  "tgl_lahir": "9/25/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 81,
+  "nama": "Ingrim",
+  "alamat": "Indonesia",
+  "no_hp": "+62 370 887 7655",
+  "tgl_lahir": "11/12/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 82,
+  "nama": "Benton",
+  "alamat": "Poland",
+  "no_hp": "+48 161 540 4282",
+  "tgl_lahir": "4/25/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 83,
+  "nama": "Rikki",
+  "alamat": "Russia",
+  "no_hp": "+7 953 330 4488",
+  "tgl_lahir": "1/20/2023",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 84,
+  "nama": "Gavra",
+  "alamat": "Bulgaria",
+  "no_hp": "+359 568 832 7771",
+  "tgl_lahir": "5/28/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 85,
+  "nama": "Catriona",
+  "alamat": "Japan",
+  "no_hp": "+81 534 366 6804",
+  "tgl_lahir": "6/11/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 86,
+  "nama": "Vonnie",
+  "alamat": "China",
+  "no_hp": "+86 664 407 4618",
+  "tgl_lahir": "5/30/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 87,
+  "nama": "Morgan",
+  "alamat": "Portugal",
+  "no_hp": "+351 289 899 9651",
+  "tgl_lahir": "11/12/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 88,
+  "nama": "Roxana",
+  "alamat": "Poland",
+  "no_hp": "+48 221 667 3264",
+  "tgl_lahir": "9/12/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 89,
+  "nama": "Freddie",
+  "alamat": "Guatemala",
+  "no_hp": "+502 352 983 8693",
+  "tgl_lahir": "4/28/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 90,
+  "nama": "Mercedes",
+  "alamat": "Philippines",
+  "no_hp": "+63 852 778 3139",
+  "tgl_lahir": "4/11/2023",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 91,
+  "nama": "Hayyim",
+  "alamat": "China",
+  "no_hp": "+86 804 740 5339",
+  "tgl_lahir": "4/19/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 92,
+  "nama": "Guenevere",
+  "alamat": "Indonesia",
+  "no_hp": "+62 942 802 4403",
+  "tgl_lahir": "2/26/2023",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 93,
+  "nama": "Elsbeth",
+  "alamat": "China",
+  "no_hp": "+86 915 321 2224",
+  "tgl_lahir": "5/9/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 94,
+  "nama": "Luelle",
+  "alamat": "New Zealand",
+  "no_hp": "+64 295 371 0340",
+  "tgl_lahir": "2/1/2023",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 95,
+  "nama": "Adaline",
+  "alamat": "Portugal",
+  "no_hp": "+351 556 967 9672",
+  "tgl_lahir": "5/16/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 96,
+  "nama": "Jonis",
+  "alamat": "Armenia",
+  "no_hp": "+374 606 318 1632",
+  "tgl_lahir": "11/17/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 97,
+  "nama": "Marci",
+  "alamat": "Poland",
+  "no_hp": "+48 676 197 7584",
+  "tgl_lahir": "1/31/2023",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 98,
+  "nama": "Hertha",
+  "alamat": "Vietnam",
+  "no_hp": "+84 130 629 2643",
+  "tgl_lahir": "7/25/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 99,
+  "nama": "Karine",
+  "alamat": "United States",
+  "no_hp": "+1 217 878 4350",
+  "tgl_lahir": "10/8/2022",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}, {
+  "kar_id": 100,
+  "nama": "Georgeanne",
+  "alamat": "Morocco",
+  "no_hp": "+212 953 413 1409",
+  "tgl_lahir": "3/10/2023",
+  "image": "error: wrong number of arguments (given 3, expected 0)"
+}]
+# Rows:
+100
+​
